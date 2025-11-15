@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friendly Travel - Transport & Transferts</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+        }
+        header {
+            background: #1e88e5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1504198266285-165a16be8df9?auto=format&fit=crop&w=1200&q=80') center/cover;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 1px 1px 3px black;
+            font-size: 2rem;
+            text-align: center;
+            padding: 20px;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, select, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px;
+            background: #1e88e5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        footer {
+            background: #1e88e5;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Friendly Travel</h1>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#tarifs">Tarifs</a>
+            <a href="#reservation">Réservation</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        Transferts & Transport partout — Confort et Sécurité
+    </div>
+
+    <section id="services">
+        <h2>Nos Services</h2>
+        <div class="services">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Voiture">
+                <h3>Voiture Privée</h3>
+                <p>Trajets rapides et confortables pour 1 à 4 personnes.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=800&q=80" alt="Minibus">
+                <h3>Minibus</h3>
+                <p>Idéal pour groupes jusqu’à 12 personnes.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1601584115197-04297f1f74f8?auto=format&fit=crop&w=800&q=80" alt="Bus">
+                <h3>Bus</h3>
+                <p>Transport pour excursions et grands groupes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tarifs">
+        <h2>Tarifs</h2>
+        <p style="text-align:center">Contactez-nous pour un devis personnalisé selon destination et véhicule.</p>
+    </section>
+
+    <section id="reservation">
+        <h2>Réservation</h2>
+        <form>
+            <input type="text" placeholder="Nom complet" required />
+            <input type="email" placeholder="Email" required />
+            <input type="text" placeholder="Téléphone" required />
+            <select>
+                <option>Voiture</option>
+                <option>Minibus</option>
+                <option>Bus</option>
+            </select>
+            <input type="text" placeholder="Lieu de départ" />
+            <input type="text" placeholder="Destination" />
+            <textarea placeholder="Message"></textarea>
+            <button>Envoyer</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p style="text-align:center">
+            Téléphone : <strong>[Ton numéro]</strong><br>
+            WhatsApp : <strong>[Ton WhatsApp]</strong><br>
+            Email : <strong>[Ton email]</strong>
+        </p>
+    </section>
+
+    <footer>
+        © 2025 Friendly Travel — Tous droits réservés
+    </footer>
+</body>
+</html>
